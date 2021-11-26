@@ -1,0 +1,112 @@
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    text-align: center;
+}
+
+#calculator {
+    width: 500px;
+    height: 600px;
+    background-color: lightgray;
+    border-radius: 25px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-end;       
+}
+
+
+#buttons {
+    display: grid;
+    height: 500px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(auto-fit, minmax(70px, 1fr));
+}
+
+#scientific {
+    display: grid;
+    width: 380px;
+    height: 400px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(auto-fit), minmax(75px, 1fr);
+    justify-self: end;
+    padding: 10px;
+    background-color: lightgray;
+    border-radius: 25px;
+
+}
+
+
+#scientific button {
+    border-radius: 25px;
+    font-weight: bold;
+    margin: 5px;
+    font-size: 20px;
+    border: 0px;
+}
+
+#buttons button {
+    border-radius: 25px;
+    font-weight: bold;
+    margin: 5px;
+    font-size: 20px;
+    border: 0px;
+}
+
+#buttons button:hover {
+    background-color: gray;
+}
+
+#scientific button:hover {
+    background-color: gray;
+}
+
+#clear, #backspace {
+    grid-column: span 2;
+    background-color: rgb(47, 137, 160);
+    color: white;
+}
+
+.operator {
+    background-color: rgb(30, 92, 107);
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+    padding: 0px;
+}
+
+#lcd {
+    background-color: white;
+    border-radius: 25px;
+    padding: 20px;
+    text-align: right;
+    height: 60px;
+
+}
+
+#screen {
+    font-size: 40px;
+    vertical-align: middle;
+}
+
+h3 {
+    font-size: 40px;
+    color:rgb(47, 137, 160);
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    
+}
+
+#calc-choice {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}

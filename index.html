@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel='stylesheet' href='style.css'>
+</head>
+<body>
+    <div id = 'content'>
+    <h3>Let's Calculate Something!</h3>
+
+    <div id = 'calc-choice'>
+    <input type='radio' name='calc'  checked ='checked' id='basic'>Basic</input>
+    <input type='radio' name='calc'  id='scient'>Scientific</input>
+    </div>
+
+    <div id = 'container'>
+    <div id='calculator'>
+        <div id='lcd'>
+            <div id='display'></div>
+            <div id='screen'>0</div>
+        </div>
+
+        <div id='buttons'>
+
+        <button id='clear'>CLEAR</button>
+        <button id='backspace'>BACKSPACE</button>
+
+        <button class='number'>7</button>
+        <button class='number'>8</button>
+        <button class='number'>9</button>
+        <button class='operator'>/</button>
+
+        <button class='number'>4</button>
+        <button class='number'>5</button>
+        <button class='number'>6</button>
+        <button class='operator'>*</button>
+        
+        <button class='number'>1</button>
+        <button class='number'>2</button>
+        <button class='number'>3</button>
+        <button class='operator'>-</button>
+
+        <button id='decimal'>.</button>
+        <button class='number'>0</button>
+        <button id='equals'>=</button>
+        <button class='operator'>+</button>
+        </div>
+    </div>
+
+
+        <div id = 'scientific'>
+            <button class='trig' onclick='Sine()'>sin</button>
+            <button class='trig' onclick='Cosine()'>cos</button>
+            <button class='trig' onclick='Tangent()'>tan</button>
+
+            <button class='log' onclick= 'Log()'>log</button>
+            <button class='log' onclick= 'Ln()'>ln</button>
+            <button class='log' onclick='Inverse()'><sup>1</sup>/<sub>x</sub></button>
+
+            <button class='power' onclick='Squared()'>x<sup>2</sup></button>
+            <button class='power' onclick= 'Cubed()'>x<sup>3</sup></button>
+            <button class='power' onclick= 'SquareRoot()'>&#8730;x</button>
+
+            <button class='power' id = 'factorial'>x!</button>
+            <button class='power' onclick ='eRaised()'>e<sup>x</sup></button>
+            <button class='power' onclick ='tenRaised()'>10<sup>x</sup></button>
+        </div>
+
+
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
